@@ -18,6 +18,8 @@ int main(int argc, const char * argv[]) {
     displayArray(arr, size);
     
     bubbleSort(arr, size);
+    cout << "\nSorted array: " << endl;
+    displayArray(arr, size);
     
     return 0;
 }// end main
@@ -59,7 +61,7 @@ void bubbleSort (int arr[MAX], int size) {
             if (arr[i] > arr[i + 1]) {
                 // swapping elements if elements
                 // are not in the intended order
-                swap[arr[i], arr[i + 1]];
+                swap(arr[i], arr[i + 1]);
             }
         }
     }
