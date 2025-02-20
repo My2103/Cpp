@@ -53,11 +53,11 @@ void swap (int &a, int &b) {
 
 void selectionSort (int arr[MAX], int size) {
     int current_minimum_index;
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size - 1; i++) {
         // set i as the index of the current minimun
         current_minimum_index = i;
         for (int j = i + 1; j < size; j++) {
-            if (arr[j] < arr[i]) {
+            if (arr[j] < arr[current_minimum_index]) {
                 // set j as the index of current minimum index
                 current_minimum_index = j;
             }
